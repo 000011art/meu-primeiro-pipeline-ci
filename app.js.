@@ -1,6 +1,7 @@
 // Aplicação simples para demonstrar CI/CD
 
 function saudacao(nome) {
+
     if (!nome || nome.trim() === '') {
         throw new Error('Nome não pode estar vazio');
     }
@@ -9,6 +10,7 @@ function saudacao(nome) {
 }
 
 function calcular(a, b, operacao) {
+
     switch (operacao) {
 
         case 'soma':
@@ -21,9 +23,11 @@ function calcular(a, b, operacao) {
             return a * b;
 
         case 'divisao':
+
             if (b === 0) {
                 throw new Error('Divisão por zero não é permitida');
             }
+
             return a / b;
 
         default:
